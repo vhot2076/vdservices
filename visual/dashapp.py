@@ -14,7 +14,7 @@ app = dash.Dash(__name__, prevent_initial_callbacks=True)
 # Labels and values for dropdown list
 opts = [{'label': 'ticker_' + f'{i:02}', 'value': i} for i in range(100)]
 
-# Greating http view layout
+# Creating an http view layout
 app.layout = html.Div(children=[
     dcc.Dropdown(
         id='ticker-dropdown',
