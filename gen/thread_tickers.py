@@ -1,5 +1,5 @@
 ﻿"""
-  Thread daemon for generate tickers values
+    Thread daemon for generate tickers values
 """
 
 from random import random
@@ -11,13 +11,13 @@ Tickers = [[0] for i in range(100)]
 
 
 def generate_movement():
-    """Generate virtual value function"""
+    """* Generate virtual value function"""
     movement = -1 if random() < 0.5 else 1
     return movement
 
 
 def add_tickers():
-    """Add virtual values for all tickers procedure"""
+    """* Add virtual values for all tickers procedure"""
     while True:
         t1 = time.perf_counter()
         for i in Tickers:

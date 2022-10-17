@@ -1,6 +1,6 @@
-﻿'''
-  Dash http service for get tickers values
-'''
+﻿"""
+    Dash http service for get tickers values
+"""
 import dash
 from dash import dcc
 from dash import html
@@ -37,7 +37,8 @@ app.layout = html.Div(children=[
         n_intervals=0
     )
 ])
- 
+
+
 @app.callback(Output('price-graph', 'figure'),
               [Input('ticker-dropdown', 'value'),
                Input('graph-update', 'n_intervals')
