@@ -16,6 +16,6 @@
 - install all requirements  
 `pip install -r requirements.txt`  
 - run in bash  
-`start_host.sh`  
+`./start_host.sh`  
 - open in web-browser URL "127.0.0.1:8050" for test visualisation  
 - open in web-browser URL "127.0.0.1:5000" for test generator  
